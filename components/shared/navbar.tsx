@@ -22,7 +22,7 @@ export function Navbar() {
           <Link href="#home" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-20 h-20 relative">
               <Image
-                src="/logo.jpg"
+                src="/logo.jpeg"
                 alt="BlueMoon Coaching Centre Logo"
                 fill
                 className="object-contain rounded-full"
