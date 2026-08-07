@@ -9,33 +9,6 @@ interface AdmissionsProps {
 }
 
 export function AdmissionsSection({ onAdmissionClick }: AdmissionsProps) {
-  const process = [
-    {
-      step: 1,
-      title: 'Application',
-      description: 'Fill out the online application form with required details',
-      icon: FileText,
-    },
-    {
-      step: 2,
-      title: 'Entrance Exam',
-      description: 'Take our assessment test for your respective class level',
-      icon: Calendar,
-    },
-    {
-      step: 3,
-      title: 'Interview',
-      description: 'Meet with our admission counselor for a personal discussion',
-      icon: Users,
-    },
-    {
-      step: 4,
-      title: 'Selection',
-      description: 'Receive admission decision and join our family',
-      icon: CheckCircle,
-    },
-  ];
-
   const requirements = [
     'Birth Certificate',
     'Previous Coaching Centre Marksheet',
@@ -85,48 +58,6 @@ export function AdmissionsSection({ onAdmissionClick }: AdmissionsProps) {
             We welcome applications from bright and motivated students. Our transparent admission process ensures 
             fair evaluation of every candidate.
           </p>
-        </motion.div>
-
-        {/* Admission Process */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, margin: '-100px' }}
-          className="mb-20"
-        >
-          <h3 className="text-2xl font-bold text-slate-900 text-center mb-12">Admission Process</h3>
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {process.map((item) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={item.step}
-                  variants={itemVariants}
-                  className="relative"
-                >
-                  {item.step < 4 && (
-                    <div className="hidden lg:block absolute top-16 right-0 w-12 h-1 bg-blue-300" />
-                  )}
-                  <div className="bg-blue-50 p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300">
-                    <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon size={28} />
-                    </div>
-                    <h4 className="text-xl font-bold text-slate-900 mb-2">
-                      Step {item.step}: {item.title}
-                    </h4>
-                    <p className="text-slate-600 text-sm">{item.description}</p>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
         </motion.div>
 
         {/* Eligibility and Requirements */}

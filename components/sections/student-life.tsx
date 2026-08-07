@@ -11,11 +11,7 @@ export function StudentLifeSection() {
       title: 'Cultural Programs',
       description: 'Annual cultural festivals, music performances, and cultural exchange programs throughout the year.',
     },
-    {
-      icon: Trophy,
-      title: 'Sports & Games',
-      description: 'Competitive sports programs with facilities for cricket, basketball, badminton, and athletics.',
-    },
+    
     {
       icon: BookOpen,
       title: 'Clubs & Societies',
@@ -97,7 +93,7 @@ export function StudentLifeSection() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-4">Holistic Development</h3>
+              
               <p className="text-slate-600 mb-4 leading-relaxed">
                 We believe education extends beyond textbooks. Our comprehensive programs focus on developing 
                 well-rounded individuals with strong character, leadership skills, and a passion for learning.

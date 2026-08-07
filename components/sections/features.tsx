@@ -17,30 +17,15 @@ export function FeaturesSection() {
       description:
         'Maintained student-teacher ratio ensures personalized attention and better learning outcomes for each child.',
     },
-    {
-      icon: Laptop,
-      title: 'Digital Learning',
-      description:
-        'Interactive smart classrooms with advanced technology for enhanced learning experience and better engagement.',
-    },
+   
     {
       icon: Heart,
       title: 'Student Welfare',
       description:
         'Comprehensive counseling services, medical facilities, and dedicated staff for student well-being and development.',
     },
-    {
-      icon: Zap,
-      title: 'Innovation Hub',
-      description:
-        'State-of-the-art laboratory and maker spaces for coding, robotics, and practical experiential learning.',
-    },
-    {
-      icon: Shield,
-      title: 'Safe Campus',
-      description:
-        'Advanced security measures including CCTV monitoring, trained security personnel, and secure access control systems.',
-    },
+    
+    
   ];
 
   const containerVariants = {
