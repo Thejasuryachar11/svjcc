@@ -51,14 +51,14 @@ export function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+919611323437"
+              href="tel:+917676485246"
               className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors"
               title="Call us"
             >
               <Phone size={18} />
             </a>
             <a
-              href="https://wa.me/919611323437"
+              href="https://wa.me/917676485246"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors font-medium text-sm"
@@ -94,7 +94,7 @@ export function Navbar() {
               ))}
               <div className="px-4 pt-2 border-t border-slate-200 flex flex-col gap-2">
                 <a
-                  href="https://wa.me/919611323437"
+                  href="https://wa.me/917676485246"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors font-medium text-sm"

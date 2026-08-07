@@ -26,7 +26,7 @@ export function ContactSection() {
     const whatsappMessage = `Hello Sree Vidhya Jyothi Coaching Centre (R),\n\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`;
     
     // Open WhatsApp with pre-filled message
-    const whatsappLink = `https://wa.me/918971427322?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/917676485246?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappLink, '_blank');
     
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -41,7 +41,7 @@ export function ContactSection() {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 96113 23437, +91 83106 18798',
+      details: '+91 7676485246, +91 83106 18798',
     },
     {
       icon: Mail,
@@ -179,7 +179,7 @@ export function ContactSection() {
               Or connect with us directly via WhatsApp
             </p>
             <a
-              href="https://wa.me/918971427322"
+              href="https://wa.me/917676485246"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white w-full py-3 rounded-lg transition-colors font-medium"

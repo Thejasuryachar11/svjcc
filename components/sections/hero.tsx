@@ -4,12 +4,31 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { PrimaryButton } from '@/components/shared/buttons';
 import { ArrowDown } from 'lucide-react';
+import { useState, useEffect } from "react";
 
 interface HeroProps {
   onAdmissionClick: () => void;
 }
 
+const images = [
+  "/1.1.jpg",
+  
+  "/3.jpg",
+  "/4.jpg",
+  "/event.jpg"
+];
+
 export function HeroSection({ onAdmissionClick }: HeroProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="home"
@@ -100,30 +119,37 @@ export function HeroSection({ onAdmissionClick }: HeroProps) {
 
           {/* Right Image */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative h-full"
-          >
-            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/campus.jpg"
-                alt="BlueMoon Coaching Centre Campus"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-                priority
-              />
-              {/* Overlay badge */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                <div className="text-white text-center">
-                  <p className="font-bold text-lg">Sree Vidhya Jyothi Coaching Centre (R)</p>
-                  <p className="text-sm">Modern Campus & Facilities</p>
-                </div>
-              </div>
-            </div>
+  initial={{ opacity: 0, x: 30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative h-full"
+>
+  <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
 
+    {images.map((image, index) => (
+      <Image
+        key={image}
+        src={image}
+        alt={`Campus ${index + 1}`}
+        fill
+        priority={index === 0}
+        className={`absolute inset-0 object-cover transition-opacity duration-1000 hover:scale-105 ${
+          index === currentImageIndex ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    ))}
 
-          </motion.div>
+    {/* Overlay badge */}
+    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent flex items-end justify-center pb-6">
+      <div className="text-white text-center">
+        <p className="font-bold text-lg">
+          Sree Vidhya Jyothi Coaching Centre (R)
+        </p>
+        <p className="text-sm">Modern Campus & Facilities</p>
+      </div>
+    </div>
+  </div>
+</motion.div>
         </div>
 
         {/* Scroll Indicator */}

@@ -8,25 +8,25 @@ export function FacilitiesSection() {
     {
       id: 1,
       title: 'Modern Library',
-      description: 'Extensive collection of books, digital resources, and quiet study areas for research and learning.',
+      
       image: '/library.jpg',
     },
     {
       id: 2,
-      title: 'Sports Complex',
-      description: 'Indoor and outdoor sports facilities including basketball court, cricket ground, and swimming pool.',
+      title: 'Good Nature',
+      
       image: '/sports.jpg',
     },
     {
       id: 3,
-      title: 'Advanced Science Lab',
-      description: 'State-of-the-art laboratory with modern equipment for practical experimentation and discovery.',
+      title: 'Classrooms',
+      
       image: '/lab.jpg',
     },
     {
       id: 4,
       title: 'Graduation Ceremony',
-      description: 'Celebrating student achievements with pride and creating memorable moments for our community.',
+     
       image: '/graduation.jpg',
     },
   ];

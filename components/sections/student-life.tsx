@@ -80,7 +80,7 @@ export function StudentLifeSection() {
           >
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/event.jpg"
+                src="/3.jpg"
                 alt="Student Event"
                 fill
                 className="object-cover"

@@ -9,14 +9,14 @@ export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: '/campus.jpg', alt: 'Campus Building', category: 'Campus' },
+    { src: '/1.1.jpg', alt: 'Campus Building', category: 'Campus' },
     { src: '/classroom.jpg', alt: 'Modern Classroom', category: 'Academics' },
     { src: '/library.jpg', alt: 'Coaching Centre Library', category: 'Facilities' },
     { src: '/lab.jpg', alt: 'Science Lab', category: 'Academics' },
     { src: '/sports.jpg', alt: 'Sports Complex', category: 'Sports' },
     { src: '/event.jpg', alt: 'Coaching Centre Event', category: 'Events' },
     { src: '/graduation.jpg', alt: 'Graduation Ceremony', category: 'Events' },
-    { src: '/logo.jpg', alt: 'Coaching Centre Logo', category: 'Identity' },
+    { src: '/logo.jpeg', alt: 'Coaching Centre Logo', category: 'Identity' },
   ];
 
   const containerVariants = {

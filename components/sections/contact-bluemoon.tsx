@@ -36,27 +36,19 @@ export function ContactBluemoonSection() {
             viewport={{ once: true, margin: '-100px' }}
             className="lg:col-span-2"
           >
-            <div className="w-full h-96 rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-shadow duration-300">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.347!2d77.532519!3d13.162837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x3bae1a2c5c5c5c5d%3A0x5f5f5f5f5f5f5f5f!2sBlueMoon%20Public%20Coaching Centre!5e0!3m2!1sen!2sin!4v1700000000000&q=BlueMoon+Public+Coaching Centre+Dasanapura+Bengaluru"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="BlueMoon Coaching Centre Location Map"
-              />
-            </div>
-            <motion.a
-              href="https://maps.app.goo.gl/g67vKwJHMVScbY517"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-            >
-              Open in Google Maps
-            </motion.a>
+           <div className="w-full h-96 rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-shadow duration-300">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62196.499291286644!2d77.45675820740527!3d13.017756176155084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae23370e3e712b%3A0x86d84a2ffd20ea5a!2sSree%20Vidhya%20Jyothi%20Coaching%20Centre!5e0!3m2!1sen!2sin!4v1786071915684!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+    title="Sree Vidhya Jyothi Coaching Centre Location"
+  />
+</div>
+            
           </motion.div>
 
           {/* Contact Info Cards */}
@@ -90,8 +82,8 @@ export function ContactBluemoonSection() {
                 <Phone className="text-green-600 flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Phone</h3>
-                  <a href="tel:+919611323437" className="text-green-600 hover:text-green-700 font-medium">
-                    +91 9611323437
+                  <a href="tel:+917676485246" className="text-green-600 hover:text-green-700 font-medium">
+                    +91 7676485246
                   </a>
                 </div>
               </div>

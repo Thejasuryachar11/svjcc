@@ -47,7 +47,7 @@ Please contact us for further information.
     `.trim();
     
     // Open WhatsApp with pre-filled message
-    const whatsappLink = `https://wa.me/919611323437?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/917676485246?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappLink, '_blank');
     
     setFormData({ studentName: '', parentName: '', email: '', phone: '', class: '', message: '' });

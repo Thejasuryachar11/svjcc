@@ -176,7 +176,7 @@ export function AdmissionsSection({ onAdmissionClick }: AdmissionsProps) {
               </div>
               <div>
                 <p className="font-semibold mb-1">Phone</p>
-                <p className="text-blue-100"> +91 96113 23437</p>
+                <p className="text-blue-100"> +91 7676485246</p>
                 <p className="text-blue-100"> +91 83106 18798</p>
               </div>
               <div>

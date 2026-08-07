@@ -97,7 +97,7 @@ export default function TermsOfService() {
                 </p>
                 <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
                   <p className="text-slate-700"><strong>Email:</strong> sreevidhyajyothi@gmail.com</p>
-                  <p className="text-slate-700"><strong>Phone:</strong> +91 96113 23437</p>
+                  <p className="text-slate-700"><strong>Phone:</strong> +91 7676485246</p>
                   <p className="text-slate-700"><strong>Phone:</strong> +91 83106 18798</p>
                   <p className="text-slate-700"><strong>Address:</strong> #10/16, Ramodaya Complex, 8th Cross, Vishwesharaiah Layout, Sidedahalli Main Road, Banglore - 560073</p>
                 </div>
