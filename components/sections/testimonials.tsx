@@ -21,43 +21,43 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      role: 'Parent',
+      name: 'Punith D',
+      role: 'Student',
       message:
         'Sree Vidhya Jyothi Coaching Centre has completely transformed my son\'s academic journey. The dedicated teachers and supportive environment have made all the difference.',
       rating: 5,
     },
     {
-      name: 'Priya Sharma',
-      role: 'Parent',
+      name: 'Varsha H',
+      role: 'Student',
       message:
         'My daughter has grown not just academically but also personally at Sree Vidhya Jyothi Coaching Centre. The holistic approach to education is truly remarkable.',
       rating: 5,
     },
     {
-      name: 'Arjun Verma',
+      name: 'Varun',
       role: 'Student',
       message:
         'Sree Vidhya Jyothi Coaching Centre is more than just a Coaching Centre; it\'s a family. The teachers care about our growth, and the facilities are world-class.',
       rating: 5,
     },
     {
-      name: 'Anjali Singh',
-      role: 'Parent',
+      name: 'Rakesh',
+      role: 'Student',
       message:
         'The infrastructure, faculty, and overall environment at Sree Vidhya Jyothi Coaching Centre are outstanding. I would definitely recommend it to other parents.',
       rating: 5,
     },
     {
-      name: 'Vikram Patel',
+      name: 'Chethan',
       role: 'Student',
       message:
         'The co-curricular activities and sports programs at Sree Vidhya Jyothi Coaching Centre helped me discover my talents and build confidence.',
       rating: 5,
     },
     {
-      name: 'Neha Gupta',
-      role: 'Parent',
+      name: 'Bhairesh',
+      role: 'Student',
       message:
         'Excellent teaching quality and student safety are top priorities. I\'m very impressed with the Coaching Centre\'s management.',
       rating: 5,

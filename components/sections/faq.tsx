@@ -136,7 +136,7 @@ export function FAQSection() {
             </span>
             <span className="hidden sm:inline text-blue-100">•</span>
             <span className="text-sm text-blue-100">
-              <strong>Phone:</strong> +91 9611323437, +91 8310618798
+              <strong>Phone:</strong> +91 9611323437
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

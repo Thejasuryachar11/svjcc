@@ -16,7 +16,7 @@ export function AcademicsSection() {
 
   return (
     <>
-      <section id="academics" className="py-20 bg-slate-50">
+      <section id="academics" className="py-20 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -47,32 +47,61 @@ export function AcademicsSection() {
             </div>
           </motion.div>
 
-          {/* 5 Images */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5"
-          >
-            {academicImages.map((image, index) => (
-              <button
-                key={image.src}
-                type="button"
-                onClick={() => setSelectedImage(image.src)}
-                className="group cursor-pointer rounded-2xl overflow-hidden shadow-md focus:outline-none focus:ring-4 focus:ring-blue-300"
-              >
-                <Image
-                  src={image.src}
-                  alt={`Academic activity ${index + 1}`}
-                  width={image.width}
-                  height={image.height}
-                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
-                />
-              </button>
-            ))}
-          </motion.div>
+          {/* Auto Scrolling Images */}
+          <div className="mt-12 relative overflow-hidden">
+            <motion.div
+              className="flex gap-6 w-max"
+              animate={{
+                x: ['0%', '-50%'],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  duration: 20,
+                  ease: 'linear',
+                },
+              }}
+            >
+              {/* First set */}
+              {academicImages.map((image, index) => (
+                <button
+                  key={`first-${image.src}`}
+                  type="button"
+                  onClick={() => setSelectedImage(image.src)}
+                  className="group flex-shrink-0 w-[280px] sm:w-[350px] lg:w-[420px] h-[280px] sm:h-[320px] lg:h-[350px] rounded-2xl overflow-hidden bg-white shadow-lg border border-slate-200 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                >
+                  <Image
+                    src={image.src}
+                    alt={`Academic activity ${index + 1}`}
+                    width={image.width}
+                    height={image.height}
+                    className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                    sizes="420px"
+                  />
+                </button>
+              ))}
+
+              {/* Duplicate set for seamless marquee */}
+              {academicImages.map((image, index) => (
+                <button
+                  key={`second-${image.src}`}
+                  type="button"
+                  onClick={() => setSelectedImage(image.src)}
+                  className="group flex-shrink-0 w-[280px] sm:w-[350px] lg:w-[420px] h-[280px] sm:h-[320px] lg:h-[350px] rounded-2xl overflow-hidden bg-white shadow-lg border border-slate-200 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                >
+                  <Image
+                    src={image.src}
+                    alt={`Academic activity ${index + 1}`}
+                    width={image.width}
+                    height={image.height}
+                    className="w-full h-full object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                    sizes="420px"
+                  />
+                </button>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </section>
 
