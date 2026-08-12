@@ -92,8 +92,10 @@ export function StudentLifeSection() {
               <Image
                 src="/3.jpg"
                 alt="Students receiving academic coaching"
-                fill
-                className="object-cover"
+                width={4096}
+                height={3072}
+                style={{ width: '100%', height: '100%' }}
+                className="object-contain"
               />
             </div>
           </motion.div>

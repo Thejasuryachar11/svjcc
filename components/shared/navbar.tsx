@@ -24,7 +24,9 @@ export function Navbar() {
               <Image
                 src="/logo.jpeg"
                 alt="BlueMoon Coaching Centre Logo"
-                fill
+                width={293}
+                height={256}
+                style={{ width: '100%', height: '100%' }}
                 className="object-contain rounded-full"
               />
             </div>
