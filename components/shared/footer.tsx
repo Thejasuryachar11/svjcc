@@ -168,31 +168,29 @@ export function Footer() {
             <p className="text-slate-400 text-sm mb-2">
               Website Developed by{' '}
               <span className="text-blue-400 font-semibold">
-                Charvex Global LLP
-              </span>
-            </p>
-
-            <p className="text-slate-500 text-xs mb-4">
-              Founder: Theja Suryachar P J
-            </p>
-
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-xs text-slate-400">
-              <a
+               <a
                 href="https://www.charvexglobal.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-400 transition-colors"
               >
-                www.charvexglobal.com
+                Charvex Global LLP
               </a>
+              </span>
+            </p>
+
+            
+
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-xs text-slate-400">
+             
 
               <span className="hidden sm:inline text-slate-600">•</span>
 
               <a
-                href="tel:+916363485061"
+                href="tel:+919482350233"
                 className="hover:text-blue-400 transition-colors"
               >
-                +91 63634 85061
+                +91 94823 50233
               </a>
             </div>
           </div>
