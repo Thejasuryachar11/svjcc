@@ -40,7 +40,7 @@ export function StatsSection() {
             viewport={{ once: true, margin: '-100px' }}
             className="text-center"
           >
-            <Counter end={2500} label="Active Students" suffix="+" />
+            <Counter end={250} label="Active Students" suffix="+" />
           </motion.div>
 
           <motion.div
@@ -50,7 +50,7 @@ export function StatsSection() {
             viewport={{ once: true, margin: '-100px' }}
             className="text-center"
           >
-            <Counter end={150} label="Expert Faculty" suffix="+" />
+            <Counter end={15} label="Expert Faculty" suffix="+" />
           </motion.div>
 
           <motion.div
@@ -60,7 +60,7 @@ export function StatsSection() {
             viewport={{ once: true, margin: '-100px' }}
             className="text-center"
           >
-            <Counter end={98} label="Academic Success Rate" suffix="%" />
+            <Counter end={100} label="Academic Success Rate" suffix="%" />
           </motion.div>
         </div>
 
@@ -73,7 +73,7 @@ export function StatsSection() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-blue-400/30"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold mb-2 text-white">95%</div>
+            <div className="text-3xl font-bold mb-2 text-white">100%</div>
             <p className="text-blue-100">Student Satisfaction Rate</p>
           </div>
           <div className="text-center">

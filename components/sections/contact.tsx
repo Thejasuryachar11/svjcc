@@ -41,7 +41,7 @@ export function ContactSection() {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 7676485246, +91 83106 18798',
+      details: '+91 9611323437, +91 83106 18798',
     },
     {
       icon: Mail,

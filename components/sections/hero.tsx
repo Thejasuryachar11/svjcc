@@ -107,11 +107,11 @@ export function HeroSection({ onAdmissionClick }: HeroProps) {
                 <p className="text-slate-600 text-sm">Years of Excellence</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-blue-600">2500+</p>
+                <p className="text-3xl font-bold text-blue-600">250+</p>
                 <p className="text-slate-600 text-sm">Students Enrolled</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-blue-600">150+</p>
+                <p className="text-3xl font-bold text-blue-600">15+</p>
                 <p className="text-slate-600 text-sm">Expert Faculty</p>
               </div>
             </motion.div>

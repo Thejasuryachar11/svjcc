@@ -82,8 +82,8 @@ export function ContactBluemoonSection() {
                 <Phone className="text-green-600 flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">Phone</h3>
-                  <a href="tel:+917676485246" className="text-green-600 hover:text-green-700 font-medium">
-                    +91 7676485246
+                  <a href="tel:+919611323437" className="text-green-600 hover:text-green-700 font-medium">
+                    +91 9611323437
                   </a>
                 </div>
               </div>

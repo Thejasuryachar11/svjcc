@@ -119,7 +119,7 @@ export function Footer() {
                   href="tel:+917676485246"
                   className="text-slate-400 hover:text-white transition-colors text-sm"
                 >
-                  +91 7676485246
+                  +91 9611323437
                 </a>
               </div>
 
