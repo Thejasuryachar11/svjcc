@@ -131,11 +131,13 @@ export function HeroSection({ onAdmissionClick }: HeroProps) {
         key={image}
         src={image}
         alt={`Campus ${index + 1}`}
-        fill
+        width={image === '/1.1.jpg' ? 3072 : 4096}
+        height={image === '/1.1.jpg' ? 4096 : 3072}
         priority={index === 0}
-        className={`absolute inset-0 object-cover transition-opacity duration-1000 hover:scale-105 ${
+        className={`absolute inset-0 object-contain transition-opacity duration-1000 ${
           index === currentImageIndex ? "opacity-100" : "opacity-0"
         }`}
+        style={{ width: '100%', height: '100%' }}
       />
     ))}
 

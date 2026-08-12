@@ -77,8 +77,10 @@ export function GallerySection() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                width={image.src === '/1.1.jpg' ? 3072 : image.src === '/library.jpg' ? 2072 : image.src === '/graduation.jpg' ? 2052 : 4096}
+                height={image.src === '/1.1.jpg' ? 4096 : image.src === '/library.jpg' ? 1379 : image.src === '/graduation.jpg' ? 3024 : 3072}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                style={{ width: '100%', height: '100%' }}
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-end p-4">
                 <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -110,8 +112,10 @@ export function GallerySection() {
             <Image
               src={selectedImage}
               alt="Gallery"
-              fill
-              className="object-contain"
+              width={selectedImage === '/1.1.jpg' ? 3072 : selectedImage === '/library.jpg' ? 2072 : selectedImage === '/graduation.jpg' ? 2052 : 4096}
+              height={selectedImage === '/1.1.jpg' ? 4096 : selectedImage === '/library.jpg' ? 1379 : selectedImage === '/graduation.jpg' ? 3024 : 3072}
+              className="max-w-full max-h-[90vh] w-auto h-auto object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
             <button
               onClick={() => setSelectedImage(null)}

@@ -89,8 +89,10 @@ export function FacilitiesSection() {
               <Image
                 src={facility.image}
                 alt={facility.title}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                width={facility.image === '/library.jpg' ? 2072 : facility.image === '/graduation.jpg' ? 2052 : 4096}
+                height={facility.image === '/library.jpg' ? 1379 : facility.image === '/graduation.jpg' ? 3024 : 3072}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                style={{ width: '100%', height: '100%' }}
               />
 
               {/* Overlay */}

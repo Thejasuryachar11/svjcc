@@ -8,11 +8,10 @@ export function AcademicsSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const academicImages = [
-    '/images/a1.png',
-    '/images/a2.png',
-    '/images/a3.png',
-    '/images/a4.png',
-    
+    { src: '/images/a1.png', width: 1618, height: 972 },
+    { src: '/images/a2.png', width: 1012, height: 1555 },
+    { src: '/images/a3.png', width: 1578, height: 997 },
+    { src: '/images/a4.png', width: 1537, height: 1023 },
   ];
 
   return (
@@ -58,17 +57,17 @@ export function AcademicsSection() {
           >
             {academicImages.map((image, index) => (
               <button
-                key={image}
+                key={image.src}
                 type="button"
-                onClick={() => setSelectedImage(image)}
+                onClick={() => setSelectedImage(image.src)}
                 className="group cursor-pointer rounded-2xl overflow-hidden shadow-md focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 <Image
-                  src={image}
+                  src={image.src}
                   alt={`Academic activity ${index + 1}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                  width={image.width}
+                  height={image.height}
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105 object-contain"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
                 />
               </button>
