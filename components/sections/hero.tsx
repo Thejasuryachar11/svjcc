@@ -12,7 +12,7 @@ interface HeroProps {
 
 const images = [
   "/1.1.jpg",
-  
+  "/a3.png",
   "/3.jpg",
   "/4.jpg",
   "/event.jpg"
@@ -22,13 +22,16 @@ export function HeroSection({ onAdmissionClick }: HeroProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+  const durations = [5000, 3000, 3000, 3000];
 
-    return () => clearInterval(interval);
-  }, []);
+  const timer = setTimeout(() => {
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex + 1) % images.length
+    );
+  }, durations[currentImageIndex]);
 
+  return () => clearTimeout(timer);
+}, [currentImageIndex]);
   return (
     <section
       id="home"

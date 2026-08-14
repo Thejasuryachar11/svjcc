@@ -2,35 +2,41 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { BookOpen, Calculator, Languages, Globe } from 'lucide-react';
+import { BookOpen, Calculator, Languages, Globe, FlaskConical } from 'lucide-react';
 
 export function StudentLifeSection() {
   const subjects = [
-    {
-      icon: Languages,
-      title: 'English',
-      description:
-        'Easy learning of reading, writing, grammar, vocabulary, and basic communication.',
-    },
-    {
-      icon: BookOpen,
-      title: 'Kannada',
-      description:
-        'Simple lessons in reading, writing, grammar, spelling, and understanding Kannada.',
-    },
-    {
-      icon: Calculator,
-      title: 'Mathematics',
-      description:
-        'Step-by-step learning of basic concepts, calculations, problem-solving, and practice.',
-    },
-    {
-      icon: Globe,
-      title: 'Social Science',
-      description:
-        'Easy explanations of History, Geography, Civics, and important social concepts.',
-    },
-  ];
+  {
+    icon: Languages,
+    title: 'English',
+    description:
+      'Easy learning of reading, writing, grammar, vocabulary, and basic communication.',
+  },
+  {
+    icon: BookOpen,
+    title: 'Kannada',
+    description:
+      'Simple lessons in reading, writing, grammar, spelling, and understanding Kannada.',
+  },
+  {
+    icon: Calculator,
+    title: 'Mathematics',
+    description:
+      'Step-by-step learning of basic concepts, calculations, problem-solving, and practice.',
+  },
+  {
+    icon: Globe,
+    title: 'Social Science',
+    description:
+      'Easy explanations of History, Geography, Civics, and important social concepts.',
+  },
+  {
+    icon: FlaskConical,
+    title: 'Science',
+    description:
+      'Simple and engaging learning of basic concepts in Physics, Chemistry, Biology, and everyday science.',
+  },
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
