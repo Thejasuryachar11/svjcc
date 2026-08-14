@@ -22,7 +22,7 @@ export function HeroSection({ onAdmissionClick }: HeroProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-  const durations = [5000, 3000, 3000, 3000];
+  const durations = [10000, 3000, 3000, 3000];
 
   const timer = setTimeout(() => {
     setCurrentImageIndex(
