@@ -34,16 +34,27 @@ export function AcademicsSection() {
             </h2>
 
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Following State Syllabus with classes from Nursery, LKG, UKG,
-              1st–5th, 6th–8th, and 9th–10th. Our academic approach is designed
-              to develop strong foundations and encourage a keen interest in
-              learning.
-            </p>
+  Following <span className="font-semibold text-blue-600">State, CBSE & ICSE Syllabus</span>
+  for students from <span className="font-semibold text-purple-600">8th, 9th & 10th</span>.
+  Our academic approach is designed to build strong foundations, develop conceptual clarity,
+  and encourage a keen interest in learning.
+</p>
 
-            <div className="mt-6 inline-block bg-blue-50 px-6 py-3 rounded-lg border border-blue-200">
+<div className="mt-6 inline-block bg-blue-50 px-6 py-4 rounded-lg border border-blue-200">
   <p className="text-slate-700 font-semibold">
-    Classes: 8th • 9th • 10th [CBSE • ICSE • State Syllabus],PUC : Science • Commerce • NEET • JEE • KCET • COMED-K(Competitive Exams)
+    Classes:{" "}
+    <span className="text-purple-600">8th • 9th • 10th</span>
+    {" • "}
+    Syllabus:{" "}
+    <span className="text-blue-600">CBSE • ICSE • State Syllabus</span>
+    {" • "}
+    PUC:{" "}
+    <span className="text-green-600">Science • Commerce</span>
+    {" • "}
+    Competitive Exams:{" "}
+    <span className="text-red-600">NEET • JEE • KCET • COMED-K</span>
   </p>
+
 </div>
           </motion.div>
 
