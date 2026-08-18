@@ -41,10 +41,10 @@ export function AcademicsSection() {
             </p>
 
             <div className="mt-6 inline-block bg-blue-50 px-6 py-3 rounded-lg border border-blue-200">
-              <p className="text-slate-700 font-semibold">
-                Classes: Nursery, LKG, UKG, 1st–5th, 6th–8th, 9th–10th
-              </p>
-            </div>
+  <p className="text-slate-700 font-semibold">
+    Classes: 8th • 9th • 10th [CBSE • ICSE • State Syllabus],PUC : Science • Commerce • NEET • JEE • KCET • COMED-K(Competitive Exams)
+  </p>
+</div>
           </motion.div>
 
           {/* Auto Scrolling Images */}
