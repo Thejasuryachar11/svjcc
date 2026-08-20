@@ -47,7 +47,7 @@ Please contact us for further information.
     `.trim();
     
     // Open WhatsApp with pre-filled message
-    const whatsappLink = `https://wa.me/917676485246?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/918310618798?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappLink, '_blank');
     
     setFormData({ studentName: '', parentName: '', email: '', phone: '', class: '', message: '' });
@@ -143,33 +143,35 @@ Please contact us for further information.
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
-                  Applying For Class
-                </label>
-                <select
-                  name="class"
-                  value={formData.class}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
-                >
-                  <option value="">Select class</option>
-                  <option value="nursery">Nursery</option>
-                  <option value="kg">KG</option>
-                  <option value="1">Class 1</option>
-                  <option value="2">Class 2</option>
-                  <option value="3">Class 3</option>
-                  <option value="4">Class 4</option>
-                  <option value="5">Class 5</option>
-                  <option value="6">Class 6</option>
-                  <option value="7">Class 7</option>
-                  <option value="8">Class 8</option>
-                  <option value="9">Class 9</option>
-                  <option value="10">Class 10</option>
-                  <option value="11">Class 11</option>
-                  <option value="12">Class 12</option>
-                </select>
-              </div>
+  <label className="block text-sm font-medium text-slate-700 mb-1">
+    Applying For
+  </label>
+
+  <select
+    name="class"
+    value={formData.class}
+    onChange={handleChange}
+    required
+    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
+  >
+    <option value="">Select class / course</option>
+
+    {/* School Classes */}
+    <option value="8">Class 8</option>
+    <option value="9">Class 9</option>
+    <option value="10">Class 10</option>
+
+    {/* PUC */}
+    <option value="puc-science">PUC - Science</option>
+    <option value="puc-commerce">PUC - Commerce</option>
+
+    {/* Competitive Exams */}
+    <option value="neet">NEET</option>
+    <option value="jee">JEE</option>
+    <option value="kcet">KCET</option>
+    <option value="comed-k">COMED-K</option>
+  </select>
+</div>
 
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">

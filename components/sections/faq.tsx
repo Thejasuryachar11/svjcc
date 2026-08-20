@@ -147,7 +147,7 @@ export function FAQSection() {
               Email Us
             </a>
             <a
-              href="tel:+917676485246"
+              href="tel:+918310618798"
               className="px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors inline-flex items-center justify-center gap-2"
             >
               Call Us
