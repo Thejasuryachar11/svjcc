@@ -86,6 +86,12 @@ export function ContactBluemoonSection() {
                     +91 9611323437
                   </a>
                 </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-2">WhatsApp</h3>
+                  <a href="tel:+918310618798" className="text-green-600 hover:text-green-700 font-medium">
+                    +91 8310618798
+                  </a>
+                </div>
               </div>
             </motion.div>
 
